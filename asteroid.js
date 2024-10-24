@@ -65,14 +65,18 @@ function Asteroid() {
         // Create Rock1
         let rock1 = new Asteroid();
         rock1.init( this.x, this.y, this.size - 5 );
-        rock1.velX = Math.cos(a) * v * 1.2;
-        rock1.velY = Math.sin(a) * v * 1.2;
+        //rock1.velX = Math.cos(a) * v * 1.2;
+        //rock1.velY = Math.sin(a) * v * 1.2;
+        rock1.velX += Math.cos(a) * v * 0.15;
+        rock1.velY += Math.sin(a) * v * 0.15;
         rock1.update(0.15);
         asteroids.push(rock1);
         let rock2 = new Asteroid();
         rock2.init( this.x, this.y, this.size - 5 );
-        rock2.velX = Math.cos(-a) * v * 1.2;
-        rock2.velY = Math.sin(-a) * v * 1.2;
+        //rock2.velX = Math.cos(-a) * v * 1.2;
+        //rock2.velY = Math.sin(-a) * v * 1.2;
+        rock2.velX += Math.cos(-a) * v * 0.15;
+        rock2.velY += Math.sin(-a) * v * 0.15;
         rock2.update(0.15);
         asteroids.push( rock2 );
     };

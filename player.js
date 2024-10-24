@@ -5,15 +5,15 @@ function Player() {
         // Inherit the Body properties and set the radius for collision
         Body.call(this, x, y, 7.5); // Player's collision radius is half of the full size
 
-        this.radius = 7.5;      // Player's radius for collision detection
-        this.widthFactor = 0.8; // Keep the width factor the same
-        this.turnSpeed = 8;     // Keep the turn speed the same
-        this.acceleration = 2;  // Reduced player acceleration
+        this.radius = 7.5;
+        this.widthFactor = 0.8;
+        this.turnSpeed = 8;
+        this.acceleration = 2;
         this.isAccelerating = false;
         this.lives = 3;
         this.isAlive = true;
         this.isActive = true;
-        this.activateTime = 0;
+        this.activateTime = 10;
         this.respawn();
         this.shootTime = 0;
     };

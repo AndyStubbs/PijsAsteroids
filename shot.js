@@ -9,7 +9,7 @@ function Shot() {
         if( this.lifetime < 0.25 ) {
             b = Math.floor(this.lifetime / 0.25 * 255);
         }
-        $.setColor( [ 0, 0, b ] );
+        $.setColor( [ b / 2, b / 2, b ] );
         $.circle( this.x, this.y, this.radius );
     };
 

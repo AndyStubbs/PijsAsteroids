@@ -4,6 +4,13 @@
 
 ---
 
+## Play Online
+You can play the game online at:  
+[Pi.js Asteroids on Andy's Web Games](https://andyswebgames.com/games/pijs_asteroids/)
+
+
+---
+
 ## Features
 
 - **Classic Asteroids Gameplay**: Pilot your ship, destroy asteroids, and avoid collisions.
